@@ -1,0 +1,13 @@
+Book,1111111111,Java Programming,Alex Smith,Tech Press,2024,10,10,false
+Book,2222222222,Python Programming,Jane Doe,Code Press,2024,8,8,false
+Book,3333333333,Database Management,Bob Johnson,Data Press,2023,6,6,false
+Book,4444444444,Web Development,Alice Brown,Web Press,2024,5,5,false
+Book,5555555555,Data Structures,Charlie Kim,Algo Press,2023,4,4,false
+Book,6666666666,Algorithms,David Park,Algo Press,2024,7,7,false
+Book,7777777777,Software Engineering,Eva Chen,Eng Press,2024,3,3,false
+Book,8888888888,Network Security,Frank Lin,Security Press,2023,5,5,false
+Book,9999999999,Artificial Intelligence,Grace Ho,AI Press,2024,6,6,false
+Journal,1010101010,Science Today,Editors,Sci Press,2024,4,4,false
+Journal,2020202020,Tech Review,Editors,Tech Press,2024,3,3,false
+DigitalResource,1212121212,Java API Docs,Oracle,Oracle,2024,20,20,false
+DigitalResource,1313131313,Python Docs,Python Org,Python,2024,15,15,false

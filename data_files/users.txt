@@ -1,0 +1,8 @@
+Student,S001,Alex Tan,0123456789,alex@email.com,1234
+Student,S002,Ben Lim,0123456788,ben@email.com,1234
+Student,S003,Carol Wong,0123456787,carol@email.com,1234
+Faculty,F001,Dr. Smith,0198765432,smith@email.com,1234
+Faculty,F002,Prof. Lee,0198765431,lee@email.com,1234
+PublicMember,P001,David Chan,0112233445,david@email.com,1234
+PublicMember,P002,Emma Goh,0112233446,emma@email.com,1234
+PublicMember,P003,Fiona Ng,0112233447,fiona@email.com,1234

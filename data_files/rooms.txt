@@ -1,0 +1,4 @@
+R001,Main Study Room,8,Projector Whiteboard WiFi,true
+R002,Group Study Room,6,Whiteboard WiFi,true
+R003,Quiet Room,2,Desk Lamp,true
+R004,Premium Room,12,Projector Whiteboard WiFi AC,true
