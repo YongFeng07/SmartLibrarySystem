@@ -18,6 +18,7 @@ public class Main {
     
     private static User currentUser = null;
     private static Librarian currentLibrarian = null;
+    private static Library library = new Library("Smart Library SDN BHD", "Kuala Lumpur, Malaysia");
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -128,9 +129,11 @@ public class Main {
             if (item != null) {
                 if (isDamaged) item.setDamaged(true);
                 items.add(item);
+                library.addItem(item);
+    }
             }
         }
-    }
+    
 
     private static void saveItems() {
         List<String> lines = new ArrayList<>();
