@@ -5,18 +5,10 @@ public class Student extends User {
         super(userId, name, phone, email, password);
     }
 
-    
-    public int getBorrowLimit() { 
-        return 5; 
-    }
-
-    
-    public int getLoanDays() { 
-        return 14; 
-    }
-
-    
-    public double getFinePerDay() { 
-        return 0.50; 
-    }
+    @Override
+    public int getBorrowLimit() { return 5; }
+    @Override
+    public int getLoanDays() { return 14; }
+    @Override
+    public double getFinePerDay() { return 0.50; }
 }

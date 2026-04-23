@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Reservation {
     private static int idCounter = 100;
@@ -8,7 +9,7 @@ public class Reservation {
     private String userId;
     private String isbn;
     private LocalDate reservationDate;
-    private String status; // PENDING, FULFILLED, CANCELLED, EXPIRED
+    private String status;
 
     public Reservation(String userId, String isbn) {
         this.reservationId = ++idCounter;
@@ -27,33 +28,28 @@ public class Reservation {
         if (reservationId > idCounter) idCounter = reservationId;
     }
 
-    public void fulfill() { 
-        this.status = "FULFILLED"; 
-    }
-    public void cancel() { 
-        this.status = "CANCELLED"; 
-    }
-    public void expire() { 
-        this.status = "EXPIRED"; 
+    public void fulfill() { this.status = "FULFILLED"; }
+    public void cancel() { this.status = "CANCELLED"; }
+    public void expire() { this.status = "EXPIRED"; }
+
+    public int getReservationId() { return reservationId; }
+    public String getUserId() { return userId; }
+    public String getIsbn() { return isbn; }
+    public LocalDate getReservationDate() { return reservationDate; }
+    public String getStatus() { return status; }
+    public boolean isPending() { return status.equals("PENDING"); }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Reservation that = (Reservation) obj;
+        return reservationId == that.reservationId;
     }
 
-    public int getReservationId() { 
-        return reservationId; 
-    }
-    public String getUserId() { 
-        return userId; 
-    }
-    public String getIsbn() { 
-        return isbn; 
-    }
-    public LocalDate getReservationDate() {
-        return reservationDate; 
-    }
-    public String getStatus() { 
-        return status; 
-    }
-    public boolean isPending() { 
-        return status.equals("PENDING"); 
+    @Override
+    public int hashCode() {
+        return Objects.hash(reservationId);
     }
 
     @Override

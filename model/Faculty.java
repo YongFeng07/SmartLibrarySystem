@@ -5,18 +5,10 @@ public class Faculty extends User {
         super(userId, name, phone, email, password);
     }
 
-    
-    public int getBorrowLimit() { 
-        return 12; 
-    }
-
-    
-    public int getLoanDays() { 
-        return 30; 
-    }
-
-    
-    public double getFinePerDay() { 
-        return 0.20; 
-    }
+    @Override
+    public int getBorrowLimit() { return 12; }
+    @Override
+    public int getLoanDays() { return 30; }
+    @Override
+    public double getFinePerDay() { return 0.20; }
 }

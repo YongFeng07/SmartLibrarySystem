@@ -5,18 +5,10 @@ public class PublicMember extends User {
         super(userId, name, phone, email, password);
     }
 
-    
-    public int getBorrowLimit() { 
-        return 3; 
-    }
-
-    
-    public int getLoanDays() { 
-        return 7; 
-    }
-
-    
-    public double getFinePerDay() { 
-        return 1.00; 
-    }
+    @Override
+    public int getBorrowLimit() { return 3; }
+    @Override
+    public int getLoanDays() { return 7; }
+    @Override
+    public double getFinePerDay() { return 1.00; }
 }
